@@ -12,7 +12,7 @@
         <td>Beschreibung</td>
     </thead>
     <tbody>
-    @for (product of productCollection$|async; track product.sku) {
+    @for (product of productCollection$; track product.sku) {
         <tr>
         <td>{{product.sku}}</td>
         <td>{{product.parentSku}}</td>
